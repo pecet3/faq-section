@@ -1,5 +1,11 @@
 import React from 'react';
 
+export  interface PersonalData {
+    name: string;
+    age?: number;
+}
+
+
 export interface TextInputProps {
     text: string;
     sayHello: boolean;
@@ -8,15 +14,23 @@ export interface TextInputProps {
     optionalString?: string;
     // tak funkcje sie deklaruje
     anyFunction?: () => void;
+    // w tym interface dodałem interface PersonalData
+    personalData?: PersonalData;
 }
 
-const TestComponent: React.FC<TextInputProps> = ({text, sayHello}) =>{
+//                                                                    \/ musze podac nazwe w propsach tego interface personalData
+
+const TestComponent: React.FC<TextInputProps> = ({text, sayHello, personalData}) =>{
   return (
     <>
     <p>
         {text}
     </p>
     {sayHello && <h1>Hello</h1>}
+    <div>
+        imię: <b>{personalData.name}</b> <br/>
+        wiek: <i>{personalData.age}</i>
+    </div>
     </>
   );
 }
