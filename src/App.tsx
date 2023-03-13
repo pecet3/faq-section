@@ -9,6 +9,7 @@ function App() {
     <TestComponent 
     text="witaj ojcze, to jest testowy komponent, zobacz go jak dokładnie wygląda, posiada interface, gdzie określasz w nim typy zmiennych"
     sayHello={true}
+    personalData={{name: "Jakub", age: 23}}
     />
     <TestComponent2
     title="Hello, this is TestComponent2"
