@@ -1,10 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TestComponent from "./TestComponent";
 
 function App() {
   return (
+    <>
+    <TestComponent text="witaj"/>
     <div className="App">
+      <p>hej</p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +24,7 @@ function App() {
         </a>
       </header>
     </div>
+    </>
   );
 }
 
