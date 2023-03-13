@@ -6,9 +6,8 @@ import TestComponent from "./TestComponent";
 function App() {
   return (
     <>
-    <TestComponent text="witaj"/>
+    <TestComponent text="witaj ojcze, to jest testowy komponent, zobacz go jak dokładnie wygląda, posiada interface, gdzie określasz w nim typy zmiennych"/>
     <div className="App">
-      <p>hej</p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
