@@ -8,6 +8,17 @@ interface PropsInterface {
 interface Button {
   counter: number;
 }
+const data: { name: string; age: number; note?: string }[] = [
+  {
+    name: "Jakub",
+    age: 23,
+  },
+  {
+    name: "Grzegorz",
+    age: 49,
+    note: "Great Philosopher",
+  },
+];
 
 export const TestComponent2 = ({ title, luckyNumber }: PropsInterface) => {
   const [counter, setCounter] = useState<Button>({
