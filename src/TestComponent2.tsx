@@ -37,8 +37,17 @@ export const TestComponent2 = ({ title, luckyNumber }: PropsInterface) => {
     });
   };
 
+  const onClickButton = () => {
+    setCounter({
+      ...counter,
+      counter: counter.counter + 1,
+    });
+  };
+
   return (
     <>
+      <button onClick={onClickButton}>+1</button>
+      <h2>{counter.counter}</h2>
       <div>
         <h2>{title}</h2>
         <p>Your lucky number is: {luckyNumber}</p>
